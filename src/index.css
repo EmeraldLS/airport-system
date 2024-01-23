@@ -86,13 +86,62 @@ nav a:hover {
 }
 
 .hotel-component{
-  margin: 10px 20px;
   border-radius: 5px;
-  background-color: rgba(102, 148, 235, 0.1);
+  background-color: #6694eb1a;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
 
+.modal{
+  position: absolute;
+  right: 0;
+  top: 100px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+
+
+.modal_header{
+  margin: 10px 0;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_content{
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: auto;
+}
+
+.modal_body{
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.modal_footer{
+  margin: 10px 0;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
 }

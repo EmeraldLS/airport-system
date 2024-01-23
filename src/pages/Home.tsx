@@ -2,6 +2,7 @@ import { Tab, Tabs } from "../components/Tabs"
 import { LuPlane } from "react-icons/lu";
 import { BiBuildings } from "react-icons/bi";
 import { IoCarSportOutline } from "react-icons/io5";
+import { Hotel } from "../components/Hotel";
 
 export const Home = () => {
     return (
@@ -29,41 +30,7 @@ export const Home = () => {
                         </div>
                     </Tab>
                     <Tab label="Hotels" icon={<BiBuildings className="mt-1" />}>
-                        <div className="py-10 px-5 hotel-component">
-                            <div className="flex">
-                                <input 
-                                type="text" 
-                                className=" outline-none border-none bg-transparent text-2xl w-[200px]" 
-                                placeholder="Destination" />
-                            </div>
-                            <div className="flex">
-                                <div>
-                                    <h1 className="text-[17px] text-gray-400">Check In</h1>
-                                    <h1 className="text-2xl text-gray-400 items-center">
-                                        {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
-                                    </h1>
-                                </div>
-                               
-                                
-                            </div>
-                            <div className="flex">
-                                <div>
-                                    <h1 className="text-[17px] text-gray-400">Check Out</h1>
-                                    <h1 className="text-2xl text-gray-400 items-center">
-                                        {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
-                                    </h1>
-                                </div>
-                               
-                            </div>
-                            <div className="flex">
-                                <div>
-                                    <h1 className="text-[17px] text-gray-400">Guest and Room</h1>
-                                    <h1 className="text-2xl text-gray-400 items-center">
-                                        1 Room, 2 Guest
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
+                       <Hotel />
                     </Tab>
                     <Tab label="Car Rentals" icon={<IoCarSportOutline  className="mt-1" />}>
                         <div className="py-4">
